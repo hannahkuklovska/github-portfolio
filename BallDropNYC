@@ -1,0 +1,57 @@
+#include <stdio.h>
+int main()
+{
+    int x = 0,y = 0, i =0, l=0;
+    unsigned int size = 0;
+    printf("Enter the size = ");
+    scanf("%u",&size);
+
+for(x; x < size; x++){
+    for(l = 0; l < size -1; ++l)
+        {
+            printf(" ");
+        }
+    for(i = 1; i <= 1; i++){
+        printf("*");
+    }
+    printf("\n");
+}
+for(x = size/2 + size/4; size >= x; x++)
+    {
+        for(y = x; y < size; ++y)
+        {
+            printf(" ");
+        }
+        for(y = 1; y <=(x*2) - 1; ++y)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+ for(x = size;  x >= size/2 + size/4; --x)
+    {
+        for(y=x; y < size; ++y)
+        {
+            printf(" ");
+        }
+        for(y=1; y <= (x*2)-1; ++y)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+for(x = size; x >= 1; --x){
+    for(l = 0; l < size-1; ++l)
+        {
+            printf(" ");
+        }
+    for(i = 1; i <= 1; i++){
+        printf("*");
+    }
+    printf("\n");
+}
+return 0;
+
+}
